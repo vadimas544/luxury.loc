@@ -20,6 +20,7 @@ class App
         self::$app = Registry::instance();// now $app is container where we have object our Registry with properties
         $this->getParams();
         new ErrorHandler();
+        Router::dispatch($query);
     }
 
     protected  function getParams()
