@@ -1,0 +1,22 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Vadim
+ * Date: 20.05.2019
+ * Time: 15:40
+ */
+
+namespace luxury;
+
+
+trait TSingleton
+{
+    private  static $instance;
+    public static  function instance()
+    {
+        if(self::$instance === null){
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
+}
