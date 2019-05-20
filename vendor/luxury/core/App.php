@@ -19,6 +19,7 @@ class App
         session_start();
         self::$app = Registry::instance();// now $app is container where we have object our Registry with properties
         $this->getParams();
+        new ErrorHandler();
     }
 
     protected  function getParams()
