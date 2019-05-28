@@ -10,6 +10,7 @@ namespace app\controllers;
 
 
 use app\controllers\AppController;
+use luxury\Cache;
 
 class MainController extends AppController
 {
@@ -19,7 +20,13 @@ class MainController extends AppController
         $this->setMeta('Main page', 'Description', 'Keywords');
         $name = 'John';
         $age = 30;
+        $names = ['Andrew', 'Jane'];
+        $cache = Cache::instance();
+        //debug($cache);
+        //$cache->set('test', $names);
+        $data = $cache->get('test');
+        //debug($data);
 
-       $this->set(compact(posts));
+       $this->set(compact('posts'));
     }
 }

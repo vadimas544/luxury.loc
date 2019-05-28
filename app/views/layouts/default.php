@@ -13,7 +13,7 @@
             ->getDatabase()
             ->getLogger();
 
-        debug($logs);
+        //debug($logs);
 
     ?>
 </body>

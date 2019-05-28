@@ -1,2 +1,6 @@
 [2019-05-28 19:02:07] Текст ошибки: Нет соединения с БД | Файл: C:\xampp\htdocs\luxury.loc\vendor\luxury\core\Db.php | Строка: 21
 ===========
+[2019-05-28 19:18:54] Текст ошибки: Страница не найдена | Файл: C:\xampp\htdocs\luxury.loc\vendor\luxury\core\Router.php | Строка: 49
+===========
+[2019-05-28 19:20:28] Текст ошибки: Страница не найдена | Файл: C:\xampp\htdocs\luxury.loc\vendor\luxury\core\Router.php | Строка: 49
+===========
