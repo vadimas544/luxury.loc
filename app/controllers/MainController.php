@@ -15,7 +15,10 @@ class MainController extends AppController
 {
     public function indexAction()
     {
+        $this->setMeta('Main page', 'Description', 'Keywords');
+        $name = 'John';
+        $age = 30;
 
-
+        $this->set(compact('name', 'age'));
     }
 }
