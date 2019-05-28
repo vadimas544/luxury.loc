@@ -7,6 +7,14 @@
 <body>
     <h1>Main layout</h1>
     <p><?=$content?></p>
-    <p><?=$name?></p>
+
+    <?php
+        $logs = \R::getDatabaseAdapter()
+            ->getDatabase()
+            ->getLogger();
+
+        debug($logs);
+
+    ?>
 </body>
 </html>

@@ -15,10 +15,11 @@ class MainController extends AppController
 {
     public function indexAction()
     {
+        $posts = \R::findAll('test');
         $this->setMeta('Main page', 'Description', 'Keywords');
         $name = 'John';
         $age = 30;
 
-        $this->set(compact('name', 'age'));
+       $this->set(compact(posts));
     }
 }
