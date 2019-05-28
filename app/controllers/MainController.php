@@ -9,10 +9,13 @@
 namespace app\controllers;
 
 
-class MainController
+use app\controllers\AppController;
+
+class MainController extends AppController
 {
     public function indexAction()
     {
-        echo __METHOD__;
+
+
     }
 }
